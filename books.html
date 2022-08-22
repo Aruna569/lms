@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="icon" href="library.jpg">
+    <link rel="stylesheet" href="books-css.css">
+    <meta content="initial-scale=1, maximum-scale=1,
+    user-scalable=0" name="viewport" />
+<meta name="viewport" content="width=device-width" />
+
+<!-- Datatable plugin CSS file -->
+
+
+<!-- jQuery library file -->
+<script type="text/javascript"
+src="https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+<!-- Datatable plugin JS library file -->
+
+    <script>
+/* Initialization of datatable */
+$(document).ready(function() {
+            $('#myTable').DataTable({ 
+                "searching" : false
+            });
+        });
+</script>
+
+</head>
+<body>
+  <p style="background-image: url('book.jpg');"></p>
+    <div class="my-lib">
+       <img src="book.jpg" alt="cover-image" class="cover" width="1350" height="300">
+       <div class="top-right">LOGIN/REGISTER</div>
+    </div>
+
+    <hr>
+    <br>
+<div  class="filters" id="filters">
+    
+    <table id="myTable" class="display">
+        <thead>
+            <tr class="header">
+                <th><label> S.No</label></th>
+                <th><label >TITLE</label></th>
+                <th><label>AUTHOR</label></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td> Five Point Someone</td>
+                <td>Kushwanth Singh</td>
+            </tr>
+    
+            <tr>
+                <td>2</td>
+                <td> One Night @ the Call Center</td>
+                <td>Kushwanth Singh</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>The 3 Mistakes Of My Life</td>
+                <td>Kushwanth Singh</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>2 States</td>
+                <td>Kushwanth Singh</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>Gitanjali</td>
+                <td>Vikram Seth</td>     
+            </tr>
+        
+            
+            <tr>
+                <td>6</td>
+                <td> The Home and the World </td>
+                <td>Vikram Seth</td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>Gora</td>
+                <td>Vikram Seth</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    <h2>Search Authors</h2>
+    <input type="text" id="myInputauthor" onkeyup="fa()" class="sba author" placeholder="Search for authors..">
+    <br>
+    <h2>Search Title</h2>
+    <input type="text" id="myInputtitle" onkeyup="ft()" class="sba title" placeholder="Search for title..">
+    <br>
+</div>
+    
+</body>
+</html>
